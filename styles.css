@@ -1,24 +1,24 @@
-/* Updated color variables to match design brief with vibrant orange and rich black theme */
+
 :root {
-  --background: #1c1c1c; /* Rich Black */
-  --foreground: #ffffff; /* White */
-  --card: #2d2d2d; /* Dark Gray */
-  --card-foreground: #ffffff; /* White */
-  --primary: #ff5722; /* Vibrant Orange */
-  --primary-foreground: #ffffff; /* White */
-  --secondary: #ffc107; /* Amber */
-  --secondary-foreground: #1c1c1c; /* Rich Black */
-  --muted: #2d2d2d; /* Dark Gray */
-  --muted-foreground: #cccccc; /* Light Gray */
-  --accent: #ff5722; /* Vibrant Orange */
-  --accent-foreground: #ffffff; /* White */
-  --border: #374151; /* Dark Gray Border */
-  --input: #2d2d2d; /* Dark Gray */
-  --ring: #ff5722; /* Vibrant Orange */
+  --background: #1c1c1c; 
+  --foreground: #ffffff; 
+  --card: #2d2d2d; 
+  --card-foreground: #ffffff; 
+  --primary: #ff5722; 
+  --primary-foreground: #ffffff; 
+  --secondary: #ffc107; 
+  --secondary-foreground: #1c1c1c;
+  --muted: #2d2d2d; 
+  --muted-foreground: #cccccc; 
+  --accent: #ff5722; 
+  --accent-foreground: #ffffff; 
+  --border: #374151; 
+  --input: #2d2d2d; 
+  --ring: #ff5722;
   --radius: 8px;
 }
 
-/* Enhanced body styling with smooth scrolling and improved typography */
+
 body {
   font-family: "Manrope", sans-serif;
   background: var(--background);
@@ -30,7 +30,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Added animated background particles effect */
+
 body::before {
   content: "";
   position: fixed;
@@ -59,7 +59,7 @@ body::before {
   }
 }
 
-/* Enhanced container with better responsive design */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -68,7 +68,7 @@ body::before {
   z-index: 1;
 }
 
-/* Stunning navbar with glassmorphism effect */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -162,7 +162,7 @@ body::before {
   width: 100%;
 }
 
-/* Enhanced hero section with 3D effects and animations */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -215,22 +215,22 @@ body::before {
 }
 
 .profile-image {
-  margin-top: 30px; /* Added margin-top to move image down */
-  margin-bottom: 20px; /* Reduced margin-bottom */
+  margin-top: 30px; 
+  margin-bottom: 20px;
   position: relative;
   display: inline-block;
-  padding: 20px; /* Added padding to prevent clipping during hover scale */
+  padding: 20px; 
 }
 
 .profile-image img {
-  width: 160px; /* Reduced image size from 200px to 160px */
-  height: 160px; /* Reduced image size from 200px to 160px */
+  width: 160px; 
+  height: 160px; 
   border-radius: 50%;
   border: 4px solid var(--primary);
   box-shadow: 0 0 40px rgba(255, 87, 34, 0.4), 0 20px 40px rgba(0, 0, 0, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   animation: profileFloat 6s ease-in-out infinite;
-  object-fit: cover; /* Added object-fit to ensure proper image scaling */
+  object-fit: cover; 
 }
 
 @keyframes profileFloat {
@@ -244,7 +244,7 @@ body::before {
 }
 
 .profile-image:hover img {
-  transform: scale(1.02) rotate(1deg); /* Reduced scale to prevent clipping and added smooth rotation */
+  transform: scale(1.02) rotate(1deg); 
   box-shadow: 0 0 60px rgba(255, 87, 34, 0.6), 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
@@ -690,7 +690,7 @@ body::before {
   border: 1px solid var(--border);
 }
 
-/* Fixed class name from skill-bar-fill to skill-progress to match HTML */
+
 .skill-progress {
   height: 100%;
   background: linear-gradient(90deg, var(--primary), var(--secondary));
@@ -801,7 +801,7 @@ body::before {
   z-index: 1;
 }
 
-/* Enhanced contact section with modern styling */
+
 .contact {
   padding: 120px 0;
   background: linear-gradient(180deg, var(--background) 0%, var(--muted) 100%);
@@ -916,14 +916,14 @@ body::before {
 
 .contact-form {
   background: var(--card);
-  padding: 50px 40px; /* Increased top/bottom padding */
+  padding: 50px 40px; 
   border-radius: var(--radius);
   border: 1px solid var(--border);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   position: relative;
   overflow: hidden;
-  max-width: 600px; /* Added max-width for better proportions */
-  margin: 0 auto; /* Center the form */
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
 .contact-form::before {
@@ -937,14 +937,14 @@ body::before {
 }
 
 .form-group {
-  margin-bottom: 30px; /* Increased from 25px */
+  margin-bottom: 30px;
   position: relative;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 20px 24px; /* Increased from 18px for better touch targets */
+  padding: 20px 24px; 
   background: var(--input);
   border: 2px solid var(--border);
   border-radius: var(--radius);
@@ -953,12 +953,12 @@ body::before {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-family: inherit;
   resize: none;
-  box-sizing: border-box; /* Ensure proper sizing */
+  box-sizing: border-box; 
 }
 
 .form-group textarea {
-  min-height: 180px; /* Increased from 120px for better usability */
-  max-height: 300px; /* Added max-height to prevent excessive stretching */
+  min-height: 180px; 
+  max-height: 300px; 
   resize: vertical;
   line-height: 1.6;
   font-family: "Geist Sans", sans-serif;
@@ -979,7 +979,7 @@ body::before {
   font-weight: 400;
 }
 
-/* Enhanced submit button with better positioning */
+
 .contact-form .btn-primary {
   width: 100%;
   margin-top: 20px;
@@ -1038,7 +1038,7 @@ body::before {
   background: transparent;
 }
 
-/* Enhanced footer with better styling */
+
 .footer {
   background: var(--background);
   padding: 40px 0;
@@ -1063,7 +1063,7 @@ body::before {
   font-size: 1rem;
 }
 
-/* Enhanced responsive design */
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -1101,7 +1101,7 @@ body::before {
 
   .intro {
     font-size: 1rem;
-    /* Maintaining bold weight on mobile */
+    
     font-weight: 600;
   }
 }
@@ -1121,7 +1121,7 @@ body::before {
 
   .intro {
     font-size: 1rem;
-    /* Maintaining bold weight on mobile */
+   
     font-weight: 600;
   }
 
